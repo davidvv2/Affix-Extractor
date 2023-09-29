@@ -1,5 +1,5 @@
 # Affix-Extractor
-This project uses Keshava and Pitler [[1]](#1) approach of extracting suffixes and prefixes using an unsupervised approach. The process involves having a set of  
+This project uses Keshava and Pitler [[1]](#1) approach of extracting suffixes and prefixes using an unsupervised approach. The process involves extracting a list of words, and use this list of words to automatically identify and rate suffixes and prefixes through the use of a Trie data structure. 
 
 
 ## References

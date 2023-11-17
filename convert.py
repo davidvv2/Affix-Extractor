@@ -41,6 +41,9 @@ class Convert:
                     unique_words.append(stem)
                     dictionary[stem] = 1
         print("Finished loading Corpus")
+
+        dictionary = dict(sorted(dictionary.items(), key=lambda x:x[1], reverse=True))
+
         file = open("Output/dictionary.txt", "w", encoding='utf8')
         print("Saving corpus")
         for key in dictionary.keys():

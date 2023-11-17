@@ -133,6 +133,7 @@ if __name__ == '__main__':
             beginning += rest[0]
             rest = rest[1:]
 
+    suffix = dict(sorted(suffix.items(), key=lambda x:x[1], reverse=True))
     file = open("Output/suffixes.txt", "w", encoding='utf8')
     for key in suffix.keys():
         if suffix[key] > 19:
@@ -167,7 +168,9 @@ if __name__ == '__main__':
             beginning += rest[0]
             rest = rest[1:]
 
+    prefix = dict(sorted(prefix.items(), key=lambda x:x[1], reverse=True))
     file = open("Output/prefixes.txt", "w", encoding='utf8')
+
     for key in prefix.keys():
         if prefix[key] > 0:
             file.write(key[::-1] + "\tscore: " + str(prefix[key]) + "\n")

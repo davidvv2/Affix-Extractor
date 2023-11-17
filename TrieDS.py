@@ -19,3 +19,4 @@ class TrieDS:
             pnode = pnode.getChildNode(char)
         childnode = pnode.getChildNode(Y)
         return childnode.count / pnode.count
+

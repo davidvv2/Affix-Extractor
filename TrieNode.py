@@ -59,3 +59,4 @@ class TrieNode:
             if currChildNode.hasWord(restofword) is True:
                 return True
         return False
+
